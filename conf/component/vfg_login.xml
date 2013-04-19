@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<component type="cucumber" replicate="true"  dependency="true">
+    <repo_location >${WORKSPACE}</repo_location>
+    <source type="git">${JOB_NAME}</source>
+  
+    <dependencies>
+        <asset name="jruby" version="1.6.5"/>
+        <asset name="xvfb" version="32"/>
+	<asset name="chromedriver" version="23.0"/>
+        <asset name="gems" version="1"/>
+        <asset name="jruby_opts" version="1.9"/>
+<!--        <asset name="DISPLAY" version="55"/>-->
+    </dependencies>
+              
+    <configuration id="cucumber_tests" default="true">
+         
+    </configuration>
+       
+    <command>
+        <start opco="true"> ./features/signup_test.feature --tags @subhash --backtrace --color --format pretty </start>
+        <stop></stop>    
+    </command>
+    <tests>
+        <cucumber>
+            <from_script>
+                
+            </from_script>
+        </cucumber>
+    </tests>
+</component>

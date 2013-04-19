@@ -1,0 +1,10 @@
+{
+  "name" : "Remove Cookies Extension",
+  "version" : "0.1",
+  "description" : "Remove Cookies",
+  "permissions": [ "cookies", "tabs", "http://*/*", "https://*/*" ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}

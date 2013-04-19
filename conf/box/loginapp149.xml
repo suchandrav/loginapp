@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<box type="box">
+    <description>LoginApp: Automated cucumber tests</description>
+    <name>145.230.58.149</name>
+    <username>jboss</username>
+    <container>/apps/products/autob</container>
+    <assets>
+        <asset name="jruby" version="1.6.5">
+            <path>/apps/products/autob/ext/jruby/1.6.5</path>
+        </asset>
+	<!--asset name="xvfb" version="32">
+	    <path>/home/amol/amol/autob/ext/Xvfb/bin</path>
+	</asset-->
+        <asset name="chromedriver" version="23.0">
+            <path>/apps/products/autob/ext/chromedriver</path>
+        </asset>
+	
+        <asset name="gems" version="1">
+            <path>/apps/products/autob/ext/gems</path>
+        </asset>
+	
+        <asset name="jruby_opts" version="1.9">
+            <path>--1.9</path>
+        </asset>
+<!--	<asset name="DISPLAY" version="55">
+            <path>:55</path>
+        </asset>-->
+    </assets>
+    
+
+    <env>
+        <var name="JBOSS_HOME" value="/apps/jboss/5.0.1.GA"/>
+        <var name="JAVA_HOME" value="/apps/java/1.6.0_25"/>
+        <var name="PWDcmd" value="/bin/pwd"/>
+        <var name="DISPLAY" value=":29"/>
+        <var name="PATH" value="/apps/products/autob/ext/chromedriver:${PATH}"/>
+        <var name="XVFB_HOME" value="/apps/products/autob/ext/Xvfb/bin"/>
+    </env>
+    <paths>
+        <ant>/apps/products/autob/ext/ant/1.8.2</ant>
+    </paths>
+</box>

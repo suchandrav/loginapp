@@ -1,0 +1,37 @@
+r<?xml version='1.0' encoding='UTF-8'?>
+<box type="box">
+    <description>LoginApp: Automated cucumber tests</description>
+    <name>app0206.be.dev</name>
+    <username>b2b</username>
+    <container>/tmp/autob</container>
+    <assets>
+	<asset name="jruby" version="1.6.5">
+	    <path>/tmp/autob/ext/jruby/1.6.5</path>
+	</asset>
+	<asset name="chromedriver" version="23.0">
+	    <path>/tmp/autob/ext/chromedriver</path>
+	</asset>
+	
+	<asset name="gems" version="1">
+	    <path>/tmp/autob/ext/gems</path>
+	</asset>
+	
+	<asset name="jruby_opts" version="1.9">
+	    <path>--1.9</path>
+	</asset>
+	
+    </assets>
+    
+
+    <env>
+        <var name="JBOSS_HOME" value="/opt/SP/jboss/jboss-4.0.5.GA/"/>
+        <var name="JAVA_HOME" value="/opt/SP/java/current"/>
+        <var name="PWDcmd" value="/bin/pwd"/>
+        <!--var name="DISPLAY" value=":29"/-->
+	<var name="PATH" value="$PATH:tmp/autob/ext/chromedriver"/>
+        <!--var name="XVFB_HOME" value="/home/amol/amol/autob/ext/Xvfb/bin"/-->
+    </env>
+    <paths>
+      <ant>/tmp/autob/ext/ant/1.8.2</ant>
+  </paths>
+</box>

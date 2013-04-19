@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="3" name="SIGN UP" skipped="0" tests="5" time="31.337792">
+<testcase classname="SIGN UP" name="Group Signup (outline example : | de | contentbackup | +491624119131 | Vodafone123 | s60gugle@googlemail.com |)" time="10.124943">
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="SIGN UP" name="Group Signup (outline example : | mt | mobileprotect | +35699952012 | Vodafone123 | vscmt@mailinator.com |)" time="2.204836">
+  <failure message="failed Group Signup (outline example : | mt | mobileprotect | +35699952012 | Vodafone123 | vscmt@mailinator.com |)" type="failed">
+    <![CDATA[Scenario Outline: Group Signup
+
+Example row: | mt | mobileprotect | +35699952012 | Vodafone123 | vscmt@mailinator.com |
+
+Message:
+]]>
+    <![CDATA[unexpected response, code=404, content-type=""
+unknown command: session/851d70af786d3cc0100af5eb0e70cd8d/element/name (Selenium::WebDriver::Error::WebDriverError)
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/http/common.rb:66:in `create_response'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/http/default.rb:66:in `request'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/http/common.rb:40:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/bridge.rb:616:in `raw_execute'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/bridge.rb:594:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/bridge.rb:493:in `getElementTagName'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/common/element.rb:68:in `tag_name'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/locators/element_locator.rb:387:in `validate_element'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/locators/element_locator.rb:37:in `locate'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/elements/element.rb:509:in `locate'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/elements/element.rb:487:in `assert_exists'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/elements/element.rb:118:in `click'
+/Users/Subhash/git/automated_tests_web_login_app/features/pages/MockServicePage_pp.rb:13:in `visit'
+/Users/Subhash/git/automated_tests_web_login_app/features/step_definitions/loginapp_steps.rb:26:in `block in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/core_ext/instance_exec.rb:48:in `instance_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/core_ext/instance_exec.rb:48:in `block in cucumber_instance_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/core_ext/instance_exec.rb:69:in `cucumber_run_with_backtrace_filtering'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/core_ext/instance_exec.rb:36:in `cucumber_instance_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/rb_support/rb_step_definition.rb:97:in `invoke'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/step_match.rb:25:in `invoke'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/step_invocation.rb:60:in `invoke'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:119:in `block (2 levels) in accept_plain'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/step_collection.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/step_collection.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:118:in `block in accept_plain'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:81:in `block (2 levels) in with_hooks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:97:in `before_and_after'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:80:in `block in with_hooks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:120:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:120:in `block (3 levels) in around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/language_support/language_methods.rb:9:in `block in around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/language_support/language_methods.rb:91:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/language_support/language_methods.rb:91:in `execute_around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/language_support/language_methods.rb:8:in `around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:119:in `block (2 levels) in around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:117:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:117:in `around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:92:in `around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:79:in `with_hooks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:117:in `accept_plain'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:107:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:131:in `block in visit_table_row'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:130:in `visit_table_row'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:27:in `block in accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:23:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:23:in `each_with_index'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:23:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:83:in `block in visit_outline_table'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:82:in `visit_outline_table'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/examples.rb:22:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:73:in `block in visit_examples'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:72:in `visit_examples'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/scenario_outline.rb:14:in `block in accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/scenario_outline.rb:13:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/scenario_outline.rb:13:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:67:in `block in visit_examples_array'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:66:in `visit_examples_array'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/scenario_outline.rb:68:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:51:in `block in visit_feature_element'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:50:in `visit_feature_element'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/feature.rb:43:in `block in accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/feature.rb:42:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/feature.rb:42:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:20:in `block in visit_feature'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:19:in `visit_feature'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/features.rb:29:in `block in accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/features.rb:17:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/features.rb:17:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/features.rb:28:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:14:in `block in visit_features'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:13:in `visit_features'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:47:in `run!'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/cli/main.rb:43:in `execute!'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/cli/main.rb:20:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/bin/cucumber:14:in `<top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/cucumber:19:in `load'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/cucumber:19:in `<main>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+features/signup_test.feature:6:in `Given I open '<service>' preprod site for the opco '<opco>' in a logged out state']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="SIGN UP" name="Group Signup (outline example : | hu | mobileprotect | +36703193529 | Vodafone123 | vschu@mailinator.com |)" time="1.582491">
+  <failure message="failed Group Signup (outline example : | hu | mobileprotect | +36703193529 | Vodafone123 | vschu@mailinator.com |)" type="failed">
+    <![CDATA[Scenario Outline: Group Signup
+
+Example row: | mt | mobileprotect | +35699952012 | Vodafone123 | vscmt@mailinator.com |
+
+Message:
+Example row: | hu | mobileprotect | +36703193529 | Vodafone123 | vschu@mailinator.com |
+
+Message:
+]]>
+    <![CDATA[unexpected response, code=404, content-type=""
+unknown command: session/851d70af786d3cc0100af5eb0e70cd8d/element/name (Selenium::WebDriver::Error::WebDriverError)
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/http/common.rb:66:in `create_response'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/http/default.rb:66:in `request'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/http/common.rb:40:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/bridge.rb:616:in `raw_execute'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/bridge.rb:594:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/bridge.rb:493:in `getElementTagName'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/common/element.rb:68:in `tag_name'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/locators/element_locator.rb:387:in `validate_element'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/locators/element_locator.rb:37:in `locate'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/elements/element.rb:509:in `locate'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/elements/element.rb:487:in `assert_exists'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/elements/element.rb:118:in `click'
+/Users/Subhash/git/automated_tests_web_login_app/features/pages/MockServicePage_pp.rb:13:in `visit'
+/Users/Subhash/git/automated_tests_web_login_app/features/step_definitions/loginapp_steps.rb:26:in `block in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/core_ext/instance_exec.rb:48:in `instance_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/core_ext/instance_exec.rb:48:in `block in cucumber_instance_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/core_ext/instance_exec.rb:69:in `cucumber_run_with_backtrace_filtering'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/core_ext/instance_exec.rb:36:in `cucumber_instance_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/rb_support/rb_step_definition.rb:97:in `invoke'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/step_match.rb:25:in `invoke'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/step_invocation.rb:60:in `invoke'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:119:in `block (2 levels) in accept_plain'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/step_collection.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/step_collection.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:118:in `block in accept_plain'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:81:in `block (2 levels) in with_hooks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:97:in `before_and_after'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:80:in `block in with_hooks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:120:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:120:in `block (3 levels) in around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/language_support/language_methods.rb:9:in `block in around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/language_support/language_methods.rb:91:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/language_support/language_methods.rb:91:in `execute_around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/language_support/language_methods.rb:8:in `around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:119:in `block (2 levels) in around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:117:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:117:in `around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:92:in `around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:79:in `with_hooks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:117:in `accept_plain'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:107:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:131:in `block in visit_table_row'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:130:in `visit_table_row'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:27:in `block in accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:23:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:23:in `each_with_index'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:23:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:83:in `block in visit_outline_table'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:82:in `visit_outline_table'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/examples.rb:22:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:73:in `block in visit_examples'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:72:in `visit_examples'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/scenario_outline.rb:14:in `block in accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/scenario_outline.rb:13:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/scenario_outline.rb:13:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:67:in `block in visit_examples_array'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:66:in `visit_examples_array'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/scenario_outline.rb:68:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:51:in `block in visit_feature_element'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:50:in `visit_feature_element'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/feature.rb:43:in `block in accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/feature.rb:42:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/feature.rb:42:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:20:in `block in visit_feature'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:19:in `visit_feature'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/features.rb:29:in `block in accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/features.rb:17:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/features.rb:17:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/features.rb:28:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:14:in `block in visit_features'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:13:in `visit_features'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:47:in `run!'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/cli/main.rb:43:in `execute!'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/cli/main.rb:20:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/bin/cucumber:14:in `<top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/cucumber:19:in `load'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/cucumber:19:in `<main>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+features/signup_test.feature:6:in `Given I open '<service>' preprod site for the opco '<opco>' in a logged out state']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="SIGN UP" name="Group Signup (outline example : | it | contacts | +393479100449 | Vodafone123 | vscit@mailinator.com |)" time="6.853021">
+  <failure message="failed Group Signup (outline example : | it | contacts | +393479100449 | Vodafone123 | vscit@mailinator.com |)" type="failed">
+    <![CDATA[Scenario Outline: Group Signup
+
+Example row: | mt | mobileprotect | +35699952012 | Vodafone123 | vscmt@mailinator.com |
+
+Message:
+Example row: | hu | mobileprotect | +36703193529 | Vodafone123 | vschu@mailinator.com |
+
+Message:
+Example row: | it | contacts | +393479100449 | Vodafone123 | vscit@mailinator.com |
+
+Message:
+]]>
+    <![CDATA[unexpected response, code=404, content-type=""
+unknown command: session/851d70af786d3cc0100af5eb0e70cd8d/element/name (Selenium::WebDriver::Error::WebDriverError)
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/http/common.rb:66:in `create_response'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/http/default.rb:66:in `request'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/http/common.rb:40:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/bridge.rb:616:in `raw_execute'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/bridge.rb:594:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/remote/bridge.rb:493:in `getElementTagName'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/selenium-webdriver-2.31.0/lib/selenium/webdriver/common/element.rb:68:in `tag_name'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/locators/element_locator.rb:387:in `validate_element'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/locators/element_locator.rb:37:in `locate'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/elements/element.rb:509:in `locate'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/elements/element.rb:487:in `assert_exists'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/watir-webdriver-0.6.2/lib/watir-webdriver/user_editable.rb:11:in `set'
+/Users/Subhash/git/automated_tests_web_login_app/features/pages/GroupMsisdnSignupDetailsPage.rb:7:in `enter_code'
+/Users/Subhash/git/automated_tests_web_login_app/features/step_definitions/signup_steps.rb:23:in `block in <top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/core_ext/instance_exec.rb:48:in `instance_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/core_ext/instance_exec.rb:48:in `block in cucumber_instance_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/core_ext/instance_exec.rb:69:in `cucumber_run_with_backtrace_filtering'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/core_ext/instance_exec.rb:36:in `cucumber_instance_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/rb_support/rb_step_definition.rb:97:in `invoke'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/step_match.rb:25:in `invoke'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/step_invocation.rb:60:in `invoke'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:119:in `block (2 levels) in accept_plain'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/step_collection.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/step_collection.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:118:in `block in accept_plain'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:81:in `block (2 levels) in with_hooks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:97:in `before_and_after'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:80:in `block in with_hooks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:120:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:120:in `block (3 levels) in around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/language_support/language_methods.rb:9:in `block in around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/language_support/language_methods.rb:91:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/language_support/language_methods.rb:91:in `execute_around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/language_support/language_methods.rb:8:in `around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:119:in `block (2 levels) in around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:117:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime/support_code.rb:117:in `around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:92:in `around'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:79:in `with_hooks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:117:in `accept_plain'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:107:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:131:in `block in visit_table_row'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:130:in `visit_table_row'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:27:in `block in accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:23:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:23:in `each_with_index'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/outline_table.rb:23:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:83:in `block in visit_outline_table'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:82:in `visit_outline_table'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/examples.rb:22:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:73:in `block in visit_examples'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:72:in `visit_examples'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/scenario_outline.rb:14:in `block in accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/scenario_outline.rb:13:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/scenario_outline.rb:13:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:67:in `block in visit_examples_array'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:66:in `visit_examples_array'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/scenario_outline.rb:68:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:51:in `block in visit_feature_element'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:50:in `visit_feature_element'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/feature.rb:43:in `block in accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/feature.rb:42:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/feature.rb:42:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:20:in `block in visit_feature'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:19:in `visit_feature'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/features.rb:29:in `block in accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/features.rb:17:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/features.rb:17:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/features.rb:28:in `accept'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:14:in `block in visit_features'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:163:in `broadcast'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/ast/tree_walker.rb:13:in `visit_features'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/runtime.rb:47:in `run!'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/cli/main.rb:43:in `execute!'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/lib/cucumber/cli/main.rb:20:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/cucumber-1.2.3/bin/cucumber:14:in `<top (required)>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/cucumber:19:in `load'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/cucumber:19:in `<main>'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/bin/ruby_noexec_wrapper:14:in `<main>'
+features/signup_test.feature:9:in `And I enter sms code with 'magic'']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="SIGN UP" name="Group Signup (outline example : | ie | contacts | +353871791214 | Vodafone123 | vscie@mailinator.com |)" time="10.572501">
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

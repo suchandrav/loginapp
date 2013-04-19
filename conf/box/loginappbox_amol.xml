@@ -1,0 +1,40 @@
+r<?xml version='1.0' encoding='UTF-8'?>
+<box type="box">
+    <description>LoginApp: Automated cucumber tests</description>
+    <name>localhost</name>
+    <username>amol</username>
+    <container>/home/amol/amol/autob</container>
+    <assets>
+	<asset name="jruby" version="1.6.5">
+	    <path>/home/amol/amol/autob/ext/jruby/1.6.5</path>
+	</asset>
+	<!--asset name="xvfb" version="32">
+	    <path>/home/amol/amol/autob/ext/Xvfb/bin</path>
+	</asset-->
+	<asset name="chromedriver" version="23.0">
+	    <path>/home/amol/amol/autob/ext/chromedriver</path>
+	</asset>
+	
+	<asset name="gems" version="1">
+	    <path>/home/amol/amol/autob/ext/gems</path>
+	</asset>
+	
+	<asset name="jruby_opts" version="1.9">
+	    <path>--1.9</path>
+	</asset>
+	
+    </assets>
+    
+
+    <env>
+        <var name="JBOSS_HOME" value="/home/amol/java/server/jboss-4.0.5.GA/"/>
+        <var name="JAVA_HOME" value="/opt/SP/java/current/jdk1.6.0_33"/>
+        <var name="PWDcmd" value="/bin/pwd"/>
+        <!--var name="DISPLAY" value=":29"/-->
+	<var name="PATH" value="$PATH:/home/amol/amol/autob/ext/chromedriver"/>
+        <!--var name="XVFB_HOME" value="/home/amol/amol/autob/ext/Xvfb/bin"/-->
+    </env>
+    <paths>
+      <ant>/home/amol/amol/cip/dev/cipcucumber/robert/stage/ext/ant/1.8.2</ant>
+  </paths>
+</box>

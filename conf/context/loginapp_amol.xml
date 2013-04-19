@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<context>
+    <description>Login App</description>
+    <components>
+        <component name="vfg_login_amol" box="loginappbox_amol"/>
+    </components>
+    <execution>
+        <step message="Cucumber tests" cmd="test_cucumber" configuration="cucumber_tests"/>
+    </execution>
+
+  <triggers class="vector">
+    <hudson.triggers.TimerTrigger>
+      <spec></spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+    <hudson.tasks.ArtifactArchiver>
+        <artifacts>reports/*.html,reports/*.png,reports/*.xml,reports/*.log,*.log</artifacts>
+        <latestOnly>false</latestOnly>
+    </hudson.tasks.ArtifactArchiver>
+    <hudson.tasks.junit.JUnitResultArchiver>
+        <testResults>reports/*.xml</testResults>
+        <keepLongStdio>false</keepLongStdio>
+        <testDataPublishers>
+            <hudson.plugins.junitattachments.AttachmentPublisher plugin="junit-attachments@1.2"/>
+        </testDataPublishers>
+    </hudson.tasks.junit.JUnitResultArchiver>
+    <net.masterthought.jenkins.CucumberReportPublisher plugin="cucumber-reports@0.0.14">
+        <jsonReportDirectory></jsonReportDirectory>
+        <pluginUrlPath></pluginUrlPath>
+        <skippedFails>false</skippedFails>
+        <undefinedFails>false</undefinedFails>
+        <noFlashCharts>false</noFlashCharts>
+    </net.masterthought.jenkins.CucumberReportPublisher>
+    <scm class="hudson.plugins.git.GitSCM" plugin="git@1.1.24">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+            <hudson.plugins.git.UserRemoteConfig>
+                <name></name>
+                <refspec></refspec>
+                <url>https://amol.munje:zr8IwFeSa@svn.sp.vodafone.com/git/automated_tests_web_login_app.git</url>
+            </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+            <hudson.plugins.git.BranchSpec>
+                <name>master</name>
+            </hudson.plugins.git.BranchSpec>
+        </branches>
+        <disableSubmodules>false</disableSubmodules>
+        <recursiveSubmodules>false</recursiveSubmodules>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <authorOrCommitter>false</authorOrCommitter>
+        <clean>false</clean>
+        <wipeOutWorkspace>false</wipeOutWorkspace>
+        <pruneBranches>false</pruneBranches>
+        <remotePoll>false</remotePoll>
+        <ignoreNotifyCommit>false</ignoreNotifyCommit>
+        <useShallowClone>false</useShallowClone>
+        <buildChooser class="hudson.plugins.git.util.DefaultBuildChooser"/>
+        <gitTool>Default</gitTool>
+        <submoduleCfg class="list"/>
+        <relativeTargetDir>${JOB_NAME}</relativeTargetDir>
+        <reference></reference>
+        <excludedRegions></excludedRegions>
+        <excludedUsers></excludedUsers>
+        <gitConfigName></gitConfigName>
+        <gitConfigEmail></gitConfigEmail>
+        <skipTag>false</skipTag>
+        <includedRegions></includedRegions>
+        <scmName></scmName>
+    </scm>
+   
+    <builders>
+
+      <hudson.tasks.Ant plugin="ant@1.1">
+        <targets>whole_run_from_wads -Dconf_location=&quot;cucumber&quot;</targets>
+        <buildFile>${JOB_NAME}/build.xml</buildFile>
+      </hudson.tasks.Ant>
+    </builders>    
+</context>
